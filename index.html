@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/16b7aa5fcd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <style src="src/styles.css"></style>
+  </head>
+
+  <body id="body">
+    <i class="fa-solid fa-bars"></i>
+    <div class="container">
+      <form class="form-inline" id="search-form">
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="searchCityInput" class="sr-only" id="city-input"
+            >Enter your city</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="searchCityInput"
+            placeholder="Enter your city"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary mb-2" id="search-button">
+          Search
+        </button>
+      </form>
+    </div>
+
+    <div class="container">
+      <h3 id="city">📍 Salerno</h3>
+    </div>
+    <div class="container">
+      <h4 id="temp">31°C</h4>
+
+      <span class="units">
+        <a href="#" id="celsius-link">°C</a> |
+        <a href="#" # id="fahrenheit-link">°F</a>
+      </span>
+      <h6></h6>
+    </div>
+
+    <div class="card-deck">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><span class="fa-solid fa-sun"></span></h5>
+          <p class="card-text">31°/22°</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Monday</small>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">
+            <span class="fa-solid fa-sun"></span>
+          </h5>
+          <p class="card-text">30°/21°</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Tuesday</small>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><span class="fa-solid fa-sun"></span></h5>
+          <p class="card-text">28°/21°</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Wednesday</small>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">
+            <span class="fa-solid fa-sun"></span>
+          </h5>
+          <p class="card-text">27°/20°</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Thursday</small>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">
+            <span class="fa-solid fa-cloud-showers-heavy"></span>
+          </h5>
+          <p class="card-text">26°/20°</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Friday</small>
+        </div>
+      </div>
+    </div>
+    <div class="details">
+      <div class="row">
+        <div class="col-6">Wind</div>
+        <div class="col-6" id="wind">8 km/h</div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-6">Humidity</div>
+        <div class="col-6" id="humidity">34 %</div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-6">Cloud</div>
+        <div class="col-6" id="clouds">3</div>
+      </div>
+    </div>
+    <div>
+      <button id="searchCurrentLocation" class="current-location-button">
+        Your current location
+      </button>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
