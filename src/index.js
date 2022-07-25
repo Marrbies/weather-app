@@ -139,3 +139,4 @@ function getCurrentPosition(event) {
 }
 let locationCurrent = document.querySelector("#searchCurrentLocation");
 locationCurrent.addEventListener("click", getCurrentPosition);
+//Icon element
