@@ -57,7 +57,7 @@ function showWeather(response) {
 
   celsiusTemperature = response.data.main.temp;
   //temperature
-  let tempElement = document.querySelector("#temp");
+  let tempElement = document.querySelector("#currentTemp");
   let temperature = Math.round(celsiusTemperature);
   tempElement.innerHTML = `${temperature} °C`;
 
@@ -96,7 +96,7 @@ function locationButton(position) {
 
   function showTemperature(position) {
     let currentTemperature = Math.round(position.data.main.temp);
-    let temperatureCur = document.querySelector("#temp");
+    let temperatureCur = document.querySelector("#currentTemp");
     temperatureCur.innerHTML = `${currentTemperature} °C`;
 
     let city = document.querySelector("#city");
@@ -141,14 +141,21 @@ function displayCelsiusTemperature(event) {
   let temperatureElement = document.querySelector("#currentTemp");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
+let toCelsiusLink = document.querySelector("#celsius-link");
+toCelsiusLink.addEventListener("click", displayCelsiusTemperature);
 //Search engine
 function searchCity(city) {
   let apiKey = "320347d27aec8d1725f14ee75b4ecee0";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?appid=${apiKey}&units=metric&q=${city}`;
   axios.get(apiUrl).then(showWeather);
 }
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#searchCityInput");
+  searchCity(cityInputElement.value);
+}
 
-let toCelsiusLink = document.querySelector("#celsius-link");
-toCelsiusLink.addEventListener("click", displayCelsiusTemperature);
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
 
 searchCity("Kyiv");
