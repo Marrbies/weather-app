@@ -52,12 +52,20 @@
       <h3 id="city">📍 Salerno</h3>
     </div>
     <div class="container">
-      <div id="temp"><i class="fa-solid fa-sun" id="currentIcon"></i> 31°C</div>
+      <div id="temp">
+        <img
+          id="icon"
+          src="http://openweathermap.org/img/wn/01d@2x.png"
+          alt="overcast clouds"
+          class="float-left"
+        />
+        <h4 id="currentTemp">25°C</h4>
+      </div>
 
-      <span class="units">
+      <div class="units">
         <a href="#" id="celsius-link">°C</a> |
         <a href="#" # id="fahrenheit-link">°F</a>
-      </span>
+      </div>
       <h6></h6>
     </div>
 
@@ -127,7 +135,7 @@
       <hr />
       <div class="row">
         <div class="col-6">Cloud</div>
-        <div class="col-6" id="clouds">3</div>
+        <div class="col-6" id="clouds">overcast clouds</div>
       </div>
     </div>
     <div>
