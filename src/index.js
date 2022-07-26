@@ -45,7 +45,7 @@ let days = [
 ];
 let day = days[now.getDay()];
 
-h6.innerHTML = `${day} ${date}, ${hours}:${minutes} `;
+h6.innerHTML = `last updated ${day} ${date}, ${hours}:${minutes} `;
 
 let search = document.querySelector("#search-button");
 search.addEventListener("click", searchCity);
@@ -129,7 +129,7 @@ function displayFahrenheitTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#currentTemp");
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+  temperatureElement.innerHTML = `${Math.round(fahrenheitTemperature)} °F`;
 }
 let toFahrenheitLink = document.querySelector("#fahrenheit-link");
 toFahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
@@ -139,7 +139,7 @@ let celsiusTemperature = null;
 function displayCelsiusTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#currentTemp");
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  temperatureElement.innerHTML = `${Math.round(celsiusTemperature)} °C`;
 }
 let toCelsiusLink = document.querySelector("#celsius-link");
 toCelsiusLink.addEventListener("click", displayCelsiusTemperature);
