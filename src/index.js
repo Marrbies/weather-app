@@ -50,6 +50,21 @@ h6.innerHTML = `last updated ${day} ${date}, ${hours}:${minutes} `;
 let search = document.querySelector("#search-button");
 search.addEventListener("click", searchCity);
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = `<div class="card-deck" id="forecast">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><span class="fa-solid fa-sun"></span></h5>
+          <p class="card-text">31°/22°</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Monday</small>
+        </div>
+      </div>`;
+}
+displayForecast();
+
 function showWeather(response) {
   let cityElement = document.querySelector("#city");
   let cityName = response.data.name;
