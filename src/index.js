@@ -49,13 +49,18 @@ h6.innerHTML = `last updated ${day} ${date}, ${hours}:${minutes} `;
 
 let search = document.querySelector("#search-button");
 search.addEventListener("click", searchCity);
-
+//Forecast
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = `<div class="card-deck" id="forecast">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title"><span class="fa-solid fa-sun"></span></h5>
+          <img
+          id="forecastIcon"
+          src="https://openweathermap.org/img/wn/01d@2x.png"
+          alt="overcast clouds"
+          class="float-left"
+        />
           <p class="card-text">31°/22°</p>
         </div>
         <div class="card-footer">
