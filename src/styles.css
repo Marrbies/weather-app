@@ -87,7 +87,7 @@ h6 {
 h6 {
   color: #757a79;
   font-size: 14px;
-  font-weight:normal;
+  font-weight: normal;
 }
 .units {
   font-size: 15px;
@@ -123,4 +123,7 @@ h6 {
 #currentTemp {
   font-size: 26px;
   color: #685454;
+}
+#forecastIcon {
+  margin: o auto;
 }
