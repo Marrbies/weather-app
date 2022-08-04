@@ -18,6 +18,7 @@
   margin-right: 150px;
   margin-bottom: 40px;
 }
+
 #search-button {
   background-color: #ff847c;
   color: #fffdef;
@@ -72,7 +73,7 @@ h6 {
 .card-deck {
   margin: 0 auto;
   margin-bottom: 40px;
-  max-width: 110%;
+  max-width: 120%;
 }
 .col-6 {
   font-size: 24px;
