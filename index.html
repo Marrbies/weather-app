@@ -27,91 +27,96 @@
   </head>
 
   <body id="body">
-    <i class="fa-solid fa-bars"></i>
-    <div class="container">
-      <form class="form-inline" id="search-form">
-        <div class="form-group mx-sm-3 mb-2">
-          <label for="searchCityInput" class="sr-only" id="city-input"
-            >Enter your city</label
-          >
-          <input
-            type="text"
-            class="form-control"
-            id="searchCityInput"
-            placeholder="Enter your city"
-            autocomplete="off"
-          />
-        </div>
-        <button type="submit" class="btn btn-primary mb-2" id="search-button">
-          Search
-        </button>
-      </form>
-    </div>
-
-    <div class="container">
-      <h3 id="city">📍 Salerno</h3>
-    </div>
-    <div class="container">
-      <div id="temp">
-        <img
-          id="icon"
-          src="https://openweathermap.org/img/wn/01d@2x.png"
-          alt="overcast clouds"
-          class="float-left"
-        />
-        <h4 id="currentTemp"></h4>
+    <div class="weather-app-wrapper">
+      <i class="fa-solid fa-bars"></i>
+      <div class="container">
+        <form class="form-inline" id="search-form">
+          <div class="form-group mx-sm-3 mb-2">
+            <label for="searchCityInput" class="sr-only" id="city-input"
+              >Enter your city</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="searchCityInput"
+              placeholder="Enter your city"
+              autocomplete="off"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary mb-2" id="search-button">
+            Search
+          </button>
+        </form>
       </div>
 
-      <div class="units">
-        <a href="#" id="celsius-link">°C</a> |
-        <a href="#" # id="fahrenheit-link">°F</a>
+      <div class="container">
+        <h3 id="city">📍 Salerno</h3>
       </div>
-      <br />
-      <h6></h6>
-    </div>
-
-    <div class="card-deck" id="forecast">
-      <div class="card">
-        <div class="card-body">
+      <div class="container">
+        <div id="temp">
           <img
-          id="forecastIcon"
-          src="https://openweathermap.org/img/wn/01d@2x.png"
-          alt="overcast clouds"
-          class="card-header"
-        />
-          <p class="card-text">31°/22°</p>
+            id="icon"
+            src="https://openweathermap.org/img/wn/01d@2x.png"
+            alt="overcast clouds"
+            class="float-left"
+          />
+          <h4 id="currentTemp"></h4>
         </div>
-        <div class="card-footer">
-          <small class="text-muted">Monday</small>
+
+        <div class="units">
+          <a href="#" id="celsius-link">°C</a> |
+          <a href="#" # id="fahrenheit-link">°F</a>
+        </div>
+        <br />
+        <h6></h6>
+      </div>
+
+      <div class="row">
+        <div class="card-deck" id="forecast">
+          <div class="card">
+            <div class="card-body">
+              <img
+                id="forecastIcon"
+                src="https://openweathermap.org/img/wn/01d@2x.png"
+                alt="overcast clouds"
+                class="card-header"
+              />
+              <p class="card-text">31°/22°</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Monday</small>
+            </div>
+          </div>
         </div>
       </div>
 
-    <div class="details">
-      <div class="row">
-        <div class="col-6">Wind</div>
-        <div class="col-6" id="wind">8 km/h</div>
+      <div class="details">
+        <div class="row">
+          <div class="col-6">Wind</div>
+          <div class="col-6" id="wind">8 km/h</div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-6">Humidity</div>
+          <div class="col-6" id="humidity">34 %</div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-6">Cloud</div>
+          <div class="col-6" id="clouds">overcast clouds</div>
+        </div>
       </div>
-      <hr />
-      <div class="row">
-        <div class="col-6">Humidity</div>
-        <div class="col-6" id="humidity">34 %</div>
+      <div>
+        <button id="searchCurrentLocation" class="current-location-button">
+          Your current location
+        </button>
       </div>
-      <hr />
-      <div class="row">
-        <div class="col-6">Cloud</div>
-        <div class="col-6" id="clouds">overcast clouds</div>
-      </div>
-    </div>
-    <div>
-      <button id="searchCurrentLocation" class="current-location-button">
-        Your current location
-      </button>
     </div>
     <p class="gitHubLink">
       <a href="https://github.com/Marrbies/weather-app"> Open-source code,</a>
       by Maryna Bohdan
     </p>
-    
+
     <script src="src/index.js"></script>
   </body>
 </html>
