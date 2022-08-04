@@ -1,11 +1,12 @@
 #body {
   background-color: #fffdef;
-  max-width: 90%;
+  max-width: 100%;
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 30px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .container {
   margin-top: 20px;
   font-size: 36px;
@@ -69,9 +70,9 @@ h6 {
   color: #260c1a;
 }
 .card-deck {
-  margin-left: 150px;
-  margin-right: 150px;
+  margin: 0 auto;
   margin-bottom: 40px;
+  max-width: 110%;
 }
 .col-6 {
   font-size: 24px;
@@ -126,4 +127,8 @@ h6 {
 }
 #forecastIcon {
   margin: 0 auto;
+}
+.weather-app-wrapper {
+  max-width: 900px;
+  margin: 30px auto;
 }
