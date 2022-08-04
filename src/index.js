@@ -52,7 +52,14 @@ search.addEventListener("click", searchCity);
 //Forecast
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
-  forecastElement.innerHTML = `<div class="card-deck" id="forecast">
+  let forecastHTML = `<div class = "row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+    <div class ="col-2">
+    <div class="card-deck" id="forecast">
       <div class="card">
         <div class="card-body">
           <img
@@ -64,9 +71,15 @@ function displayForecast() {
           <p class="card-text">31°/22°</p>
         </div>
         <div class="card-footer">
-          <small class="text-muted">Monday</small>
+          <small class="text-muted">${day}</small>
+        </div>
+        </div>
         </div>
       </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
 }
 displayForecast();
 
