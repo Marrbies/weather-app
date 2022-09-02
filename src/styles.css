@@ -20,10 +20,15 @@
 }
 
 #search-button {
-  background-color: #898aa6;
-  color: #c9bbcf;
-  border-color: #c9bbcf;
+  background-color: #b7d3df;
+  color: #898aa6;
+  border-color: #b7d3df;
   size: 35px 70px;
+}
+#search-button:hover {
+  color: #b7d3df;
+  border-color: #898aa6;
+  background-color: #898aa6;
 }
 .fa-solid.fa-bars {
   color: #303841;
@@ -97,6 +102,7 @@ h6 {
 .current-location-button {
   display: block;
   margin: 0 auto;
+  border: 3px;
   font-size: 28px;
   color: #898aa6;
   background-color: #c9bbcf;
@@ -111,7 +117,7 @@ h6 {
 }
 .current-location-button:hover {
   background-color: #898aa6;
-  border: 3px;
+  border: 30px;
   color: #c9bbcf;
   border-color: #898aa6;
   transition: 500ms;
