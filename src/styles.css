@@ -1,5 +1,5 @@
 #body {
-  background-color: #fffdef;
+  background-color: #c1efff;
   max-width: 100%;
   margin: 0 auto;
   margin-top: 30px;
@@ -20,9 +20,9 @@
 }
 
 #search-button {
-  background-color: #ff847c;
-  color: #fffdef;
-  border-color: #ff847c;
+  background-color: #ffdba4;
+  color: #ac7088;
+  border-color: #ffdba4;
   size: 35px 70px;
 }
 .fa-solid.fa-bars {
@@ -32,11 +32,11 @@
   margin-left: 30px;
 }
 #city {
-  color: #685454;
+  color: #ffb3b3;
   font-size: 36px;
 }
 #temp {
-  color: #47555e;
+  color: #ac7088;
   font-size: 26px;
 }
 h6 {
@@ -48,7 +48,7 @@ h6 {
   font-size: 16px;
 }
 .card {
-  background-color: #fecea8;
+  background-color: #ffe9ae;
   margin: 0 auto;
   max-width: 75%;
   border-radius: 20px;
@@ -78,7 +78,7 @@ h6 {
 .col-6 {
   font-size: 24px;
   max-width: 80%;
-  color: #ea8a8a;
+  color: #ffdba4;
   text-align: center;
 }
 
@@ -98,9 +98,9 @@ h6 {
   display: block;
   margin: 0 auto;
   font-size: 28px;
-  color: #fff4e1;
-  background-color: #ff847c;
-  border-color: #ff847c;
+  color: #ac7088;
+  background-color: #ffdba4;
+  border-color: #ffdba4;
   margin-top: 30px;
   margin-bottom: 30px;
   border-radius: 17px;
@@ -110,10 +110,10 @@ h6 {
   padding-bottom: 4px;
 }
 .current-location-button:hover {
-  background-color: #f1f1f1;
-  color: #ff847c;
-  border-color: #ff847c;
-  transition: 300ms;
+  background-color: #ac7088;
+  color: #ffdba4;
+  border-color: #ffdba4;
+  transition: 400ms;
 }
 .gitHubLink {
   text-align: center;
